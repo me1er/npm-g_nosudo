@@ -1,11 +1,8 @@
-npm-g_nosudo
-============
+# npm-g_nosudo
 
 A shell script which will fix the problem where you want to stop using sudo for npm -g on Ubuntu.
 
-Inspired by a day trying to sort various machines out on our system to run code nicely.
-
-and this [Stackoverflow answer](http://stackoverflow.com/a/13021677)
+Inspired by [Sindre Sorhus' Guide](https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md)
 
 Tested on Ubuntu 14.04 with Bash
 
@@ -13,14 +10,10 @@ Tested on Ubuntu 14.04 with Bash
 
 Download the script, run it:
 ```
-./npm-g-nosudo.sh
-```
-or 
-```
 wget -O- https://raw.githubusercontent.com/glenpike/npm-g_nosudo/master/npm-g-nosudo.sh | sh
 ```
 
-If you run the former command (rather than the wget version), the script will give you the option to fix your .bashrc or .zshrc file(s) automatically to use the settings from [Sindre Sorhus' Guide](https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md)
+If you run the former command (rather than the wget version), the script will give you the option to fix your .bashrc or .zshrc file(s) automatically.
 
 If you say "n", it will print the variables you need to enable you to fix manually.
 
@@ -38,4 +31,4 @@ or just open an new terminal session.
 
 ## License
 
-MIT © [Glen Pike](http://glenpike.co.uk)
+MIT © [Martin Meier](https://www.linkedin.com/in/me1er/)
